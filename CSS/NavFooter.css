@@ -1,0 +1,241 @@
+:root {
+	--primaryColorOne: #050401;
+	--primaryColorTwo: #303036;
+	--primaryColorThree: #30bced;
+	--primaryColorFour: #fc5130;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	height: 6rem;
+	width: 100%;
+	background-color: var(--primaryColorTwo);
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+	display: flex;
+}
+
+/*Styling logo*/
+.logo {
+	padding: 1vh 1vw;
+	text-align: center;
+}
+
+.logo img {
+	height: 5rem;
+	width: 5rem;
+	border-radius: 30%;
+}
+
+/*Styling Links*/
+
+.nav-links {
+	display: flex;
+	list-style: none;
+	width: 88vw;
+	padding: 0 0.7vw;
+	justify-content: space-evenly;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.nav-links li a {
+	text-decoration: none;
+	margin: 0 0.7vw;
+	color: white;
+}
+
+.nav-links li a:hover {
+	color: var(--primaryColorThree);
+}
+
+.nav-links li {
+	position: relative;
+}
+
+.nav-links li a::before {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 0%;
+	background-color: var(--primaryColorThree);
+	position: absolute;
+	transition: all ease-in-out 250ms;
+	margin: 20px 0 0 10%;
+}
+.nav-links li a:hover::before {
+	width: 80%;
+}
+
+/*Styling Buttons*/
+
+.contact-button {
+	color: var(--primaryColorOne);
+	background-color: var(--primaryColorThree);
+	border: 1.5px solid var(--primaryColorThree);
+	border-radius: 2em;
+	padding: 0.6rem 0.8rem;
+	font-size: 1rem;
+	cursor: pointer;
+}
+.contact-button:hover {
+	color: white;
+	background-color: transparent;
+	border: 1.5px solid white;
+	transition: all ease-in-out 100ms;
+}
+
+/*Styling Hamburger Icon*/
+
+.hamburger div {
+	width: 30px;
+	height: 3px;
+	background: white;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+.hamburger {
+	display: none;
+}
+
+/*Animating Hamburger Icon on Click*/
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+	transition: all 0.7s ease;
+	width: 0;
+}
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*
+=====================================
+Start of Footer
+=====================================
+*/
+
+/* Small Screen Footer */
+footer {
+	background-color: var(--primaryColorTwo);
+	height: 100%;
+	width: 100%;
+}
+.footerline-0 {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	padding-top: 30px;
+}
+
+.footerline-0 h2 {
+	margin-bottom: 25px;
+	border-bottom: 1px solid white;
+}
+
+/* .footerline-0 li {
+}
+
+.footerline-0 li a {
+}
+
+.footerline-0 p {
+} */
+
+/* Larger Screen Footer*/
+
+.footer-container-large {
+	visibility: hidden;
+	width: 90%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: blue;
+}
+
+/*
+=====================================
+Start of MQs
+=====================================
+*/
+
+@media (min-width: 550px) {
+	.footer-container-small {
+		visibility: hidden;
+	}
+
+	.footer-container-large {
+		visibility: visible;
+	}
+}
+
+/* Hamburger ONLY*/
+@media only screen and (max-width: 550px) {
+	nav {
+		position: fixed;
+		z-index: 3;
+	}
+
+	.hamburger {
+		display: block;
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 50%;
+		transform: translate(-5%, -50%);
+		z-index: 2;
+		transition: all 0.7s ease;
+	}
+
+	.nav-links {
+		position: fixed;
+		background: var(--primaryColorTwo);
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(50px at 90% -20%);
+		-webkit-clip-path: circle(50px at 90% -10%);
+		transition: all 1s ease-out;
+		pointer-events: none;
+	}
+
+	.nav-links.open {
+		clip-path: circle(1000px at 90% -10%);
+		-webkit-clip-path: circle(1000px at 90% -10%);
+		pointer-events: all;
+	}
+
+	.nav-links li {
+		opacity: 0;
+	}
+
+	.nav-links li:nth-child(1) {
+		transition: all 0.5s ease 0.2s;
+	}
+
+	.nav-links li:nth-child(2) {
+		transition: all 0.5s ease 0.4s;
+	}
+
+	.nav-links li:nth-child(3) {
+		transition: all 0.5s ease 0.6s;
+	}
+
+	.nav-links li:nth-child(4) {
+		transition: all 0.5s ease 0.7s;
+	}
+
+	li.fade {
+		opacity: 1;
+	}
+}
