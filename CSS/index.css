@@ -53,20 +53,21 @@
 /* START OF TILES */
 
 .tile-container {
-	width: auto;
+	width: 100%;
 }
 
 .wrap {
 	margin: 50px auto 0 auto;
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	align-items: space-around;
 }
 
 .tile {
-	width: 380px;
-	height: 380px;
-	margin: 10px;
+	width: 90%;
+	height: 350px;
+	margin: 20px;
 	margin-bottom: 40px;
 	background-color: var(--primaryColorThree);
 	display: inline-block;
@@ -133,7 +134,7 @@
 	opacity: 1;
 }
 
-/* START OF TESTIMIONALS */
+/* START OF Quote Cards */
 
 .header-tittle {
 	height: 20vh;
@@ -151,14 +152,14 @@
 	text-align: center;
 }
 
-.testimonials {
+.quote-card {
 	margin: 60px auto 100px;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	grid-gap: 20px;
 }
 
-.testimonials .card {
+.quote-card .card {
 	position: relative;
 	width: 350px;
 	margin: 0 auto;
@@ -170,7 +171,7 @@
 	overflow: hidden;
 }
 
-.testimonials .card .layer {
+.quote-card .card .layer {
 	position: absolute;
 	top: calc(100% - 2px);
 	left: 0;
@@ -181,23 +182,23 @@
 	transition: 0.5s;
 }
 
-.testimonials .card:hover .layer {
+.quote-card .card:hover .layer {
 	top: 0;
 }
 
-.testimonials .card .content {
+.quote-card .card .content {
 	position: relative;
 	z-index: 2;
 }
 
-.testimonials .card .content p {
+.quote-card .card .content p {
 	font-size: 18px;
 	line-height: 24px;
 	color: #fff;
 	min-height: 15vh;
 }
 
-.testimonials .card .content .image {
+.quote-card .card .content .image {
 	width: 100px;
 	height: 100px;
 	margin: 0 auto;
@@ -207,26 +208,25 @@
 	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
-.testimonials .card .content .details h2 {
+.quote-card .card .content .details h2 {
 	font-family: "Lobster", cursive;
 	font-size: 24px;
 	color: #fff;
 }
 
-.testimonials .card .content .details h3 {
+.quote-card .card .content .details h3 {
 	font-family: "Poppins", sans-serif;
 	font-size: 14px;
 	color: #43cbff;
 	transition: 05s;
 }
 
-.testimonials .card:hover .content .details h3 {
+.quote-card .card:hover .content .details h3 {
 	color: #fff;
 }
 
-@media (max-width: 800px) {
+@media screen and (min-width: 769px) {
 	.wrap {
-		flex-direction: column;
-		width: 400px;
+		flex-direction: row;
 	}
 }
