@@ -167,13 +167,40 @@ footer {
 	background-color: blue;
 }
 
+/* Social Media Imgs */
+.social {
+	padding-left: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .social li {
+	list-style: none;
+  }
+  
+  .social li a {
+	display: inline-block;
+	filter: invert(1);
+	margin-right: 40px;
+	transform: scale(0.5);
+	transition: 0.5s;
+  }
+  
+  .social li a:hover {
+	transform: scale(0.9) translateY(-25px);
+  }
+  
+  .social li img {
+	width: 50px;
+  }
 /*
 =====================================
 Start of MQs
 =====================================
 */
 
-@media (min-width: 550px) {
+@media (min-width: 630px) {
 	.footer-container-small {
 		visibility: hidden;
 	}
@@ -184,7 +211,7 @@ Start of MQs
 }
 
 /* Hamburger ONLY*/
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 630px) {
 	nav {
 		position: fixed;
 		z-index: 3;
@@ -215,7 +242,7 @@ Start of MQs
 
 	.nav-links.open {
 		clip-path: circle(1000px at 90% -10%);
-		-webkit-clip-path: circle(1000px at 90% -10%);
+		-webkit-clip-path: circle(1200px at 90% -10%);
 		pointer-events: all;
 	}
 
