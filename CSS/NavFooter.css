@@ -135,12 +135,17 @@ footer {
 	display: flex;
 	flex-direction: column;
 	color: white;
-	padding-top: 30px;
+	padding-top: 40px;
+	padding-bottom: 100px;
 }
 
 .footerline-0 h2 {
+	font-size: 35px;
+	padding-bottom: 30px;
 	margin-bottom: 25px;
 	border-bottom: 1px solid white;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
 }
 
 .footerline-0 li {
@@ -155,16 +160,11 @@ footer {
 .footerline-0 p {
 	margin-top: 30px;
 }
-/* Larger Screen Footer*/
 
+/* Larger Screen Footer*/
 .footer-container-large {
-	visibility: hidden;
-	width: 90%;
-	height: 90%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: blue;
+	display: none;
+	
 }
 
 /* Social Media Imgs */
@@ -182,7 +182,7 @@ footer {
   .social li a {
 	display: inline-block;
 	filter: invert(1);
-	margin-right: 40px;
+	margin-right: 20px;
 	transform: scale(0.5);
 	transition: 0.5s;
   }
@@ -192,7 +192,7 @@ footer {
   }
   
   .social li img {
-	width: 50px;
+	width: 70px;
   }
 /*
 =====================================
@@ -201,12 +201,41 @@ Start of MQs
 */
 
 @media (min-width: 630px) {
+
+	/* Larger Screen Footer*/
 	.footer-container-small {
-		visibility: hidden;
+		display: none;
 	}
 
 	.footer-container-large {
-		visibility: visible;
+		display: contents;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer-container-large h2 {
+		font-size: 40px;
+		color: white;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	
+	.footerline-1 ul {
+		width: 50%;
+		display: flex;
+		flex-direction: row;
+		justify-content:space-between;
+	}
+	
+	.footerline-1 li, a {
+		color: white;
+		font-size: 25px;
+		margin-right: 20px;
+		list-style: none;
+		text-decoration: none;
 	}
 }
 
