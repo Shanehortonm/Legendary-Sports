@@ -27,12 +27,10 @@ hamburger.addEventListener('click', () => {
 const makeRequest = async () => {
     try {
         const personRequest = await fetch('http://localhost:8080/settings', { 
-            method: 'GET', 
-            mode: 'no-cors',
-            
+            method: 'GET'
         });
-        //const personResponse = await personRequest.json();
-        //console.log('hello', personResponse) 
+        const personResponse = await personRequest.json();
+        console.log('hello', personResponse) 
     } catch(e) {
         console.log('goodbye', e)
     }
