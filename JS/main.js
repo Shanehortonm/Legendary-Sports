@@ -15,25 +15,4 @@ hamburger.addEventListener('click', () => {
     })
 
     hamburger.classList.toggle('toggle');
-})
-
-
-
-
-
-
-
-
-const makeRequest = async () => {
-    try {
-        const personRequest = await fetch('http://localhost:8080/settings', { 
-            method: 'GET'
-        });
-        const personResponse = await personRequest.json();
-        console.log('hello', personResponse) 
-    } catch(e) {
-        console.log('goodbye', e)
-    }
-}
-
-makeRequest();
+});
