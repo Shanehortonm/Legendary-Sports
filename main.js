@@ -17,10 +17,11 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('toggle');
 });
 
+
 const pastArray = [
     {
-        "playerName" : "John Doe",
-        "number" : "1",
+        "playerName" : "Troy Aikman",
+        "number" : "8",
         "position" : "QB",
         "yearInducted" : "2000"
     },
@@ -42,6 +43,12 @@ const pastArray = [
         "position" : "",
         "yearInducted" : ""
     },
+    {
+        "playerName" : "",
+        "number" : "",
+        "position" : "",
+        "yearInducted" : ""
+    }
 ]
 
 buildTable(pastArray)
