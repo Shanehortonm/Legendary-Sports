@@ -51,7 +51,6 @@ const pastArray = [
     }
 ]
 
-buildTable(pastArray)
 
 function buildTable(data) {
     let table = document.getElementById('pastTable')
@@ -65,4 +64,6 @@ function buildTable(data) {
 
         table.innerHTML += row
     }
-}
+};
+
+buildTable(pastArray);
