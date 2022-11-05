@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.2",
+    "chart.js": "^3.9.1",
     "cors": "^2.8.5"
   }
 }
