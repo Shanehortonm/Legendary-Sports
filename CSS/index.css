@@ -72,7 +72,7 @@ body {
 .intro-inner h2 {
 	width: 100%;
 	padding-top: 10px;
-	border-top: 1px solid black;
+	border-top: 1px solid var(--primaryColorThree);
 	text-align: center;
 	margin-top: 20px;
 	padding: 10px;
@@ -81,7 +81,7 @@ body {
 
 .intro-inner h4 {
 	padding: 8px 0 8px 0;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid var(--primaryColorThree);
 }
 
 
@@ -342,8 +342,12 @@ Start of MQs
 	}
 
 
-	.intro-inner video {}
-
+	.intro-inner video {top: 0;
+		left: 0;
+		max-width: 70%;
+		height: 80%;
+		border-radius: 2%;
+	}
 
 	.wrap {
 		flex-direction: row;
