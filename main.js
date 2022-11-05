@@ -18,6 +18,7 @@ hamburger.addEventListener('click', () => {
 });
 
 
+
 const pastArray = [
     {
         "playerName" : "Troy Aikman",

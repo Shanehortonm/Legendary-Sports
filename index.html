@@ -62,6 +62,7 @@
 
         <!-- tiles -->
         <section class="tile-container">
+          <h2 class="section-header">The Brighest Stars</h2>
           <div class="wrap">
             <div class="tile"> 
               <img src='/imgs/cowboys1.jpg'/>
@@ -92,18 +93,24 @@
           </div>
         </section>
 
+        <!-- Chart -->
+        <section class="chart-container">
+          <h2 class="section-header">By The Years</h2>
+          <div>
+            <canvas class= "my-chart" id="myChart" width="400" height="400"></canvas>
+          </div>
+        </section>
+
+
         <!-- quote cards-->
         <section>
-          <header class="header-title">
-            <h1>Inspriational Quotes By Famous Players</h1>
-          </header>
+          <h2 class="section-header">Food For Thought</h2>
           <section class="quote-card">
             <div class="card">
                 <div class="layer"></div>
                 <div class="content">
                   <p>API CALL HERE FOR QUOTES</p>
                   <div class="image">
-                    <!-- https://flic.kr/p/6EuEN2 -->
                     <img src="https://live.staticflickr.com/3436/3717404325_db41d8d687_b.jpg" width="130" height="100" alt="black cat">
                   </div>
                   <div class="details">
@@ -174,5 +181,7 @@
         </footer>
         <!-- END OF FOOTER -->
         <script src="/main.js"></script>
+        <script src="/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       </body>
 </html>

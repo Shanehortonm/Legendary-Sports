@@ -14,20 +14,31 @@ body {
 	background-color: var(--primaryColorOne);
 }
 
+.dummy-space {
+	height: 10vh;
+}
+
+.section-header {
+	border-bottom: 4mm ridge white;
+	border-radius: 60%;
+	padding-bottom: 10px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5rem;
+	color: white;
+}
+
 /*
 ===========================
     START OF HERO
 ===========================
 */
 
-.dummy-space {
-	height: 10vh;
-}
-
 .hero {
 	width: auto;
 	background-color: white;
-	
 }
 
 .intro-inner video {
@@ -118,12 +129,16 @@ body {
 	width: 100%;
 	height: 300px;
 }
+/* START OF CHART */
+
 
 /* START OF TILES */
 
 .tile-container {
 	width: 100%;
+	margin-top: 8vh;
 }
+
 
 .wrap {
 	margin: 50px auto 0 auto;
@@ -203,7 +218,14 @@ body {
 	opacity: 1;
 }
 
-/* START OF Quote Cards */
+/* START OF CHART */
+
+.chart-container {
+	width: 100%;
+	min-height: 60vh;
+}
+
+/* START OF QUOTE CARDS */
 
 .header-tittle {
 	height: 20vh;
