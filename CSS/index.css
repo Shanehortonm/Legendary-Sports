@@ -131,6 +131,19 @@ body {
 }
 /* START OF CHART */
 
+.chart-container {
+	width: 100%;
+}
+
+.inner-chart-container {
+	margin-top: 5vh;
+	background-color: white;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: white 0px 10px 30px 1px;
+}
 
 /* START OF TILES */
 
