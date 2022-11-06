@@ -13,6 +13,14 @@ table{
 	padding: 30px;
 }
 
+.sticky-table {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
 table th{
 	padding: 10px 0;
 	background-color: #f4f4f4;
