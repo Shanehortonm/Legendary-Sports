@@ -6,8 +6,8 @@
 
 
 .table-container {
-	height: 1000px;
-	padding-top: 100px;
+	height: 800px;
+	padding-top: 50px;
 	overflow: scroll;
 }
 
@@ -43,6 +43,12 @@ table td{
 }
 
 @media (min-width: 500px) {
+
+	.table-container {
+		padding-top: 0;
+		margin-top: 20px;
+	}
+
 	.small-screen-hide {
 		display: table-cell;
 	}
