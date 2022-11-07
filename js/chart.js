@@ -28,30 +28,3 @@ new Chart("myChart", {
     }
     }
   });
-
-
-
-
-//   const ctx = document.getElementById('myChart').getContext('2d');
-// const myChart = new Chart(ctx, {
-//   type: 'bar',
-//   data: {
-//     labels: ['Jan', 'Feb', 'Mar', 'Apr'],
-//     datasets: [{
-//       label: 'Month',
-//       data: [10, 20, 50, 30]
-//     }]
-//   },
-//   options: {
-//         plugins: {
-//             subtitle: {
-//                 display: true,
-//                 text: 'Title goes here ...',
-//                 color: '#ff0000',
-//                 font: {
-//                 	size: 20
-//                 }
-//             }
-//         }
-//     }
-// });

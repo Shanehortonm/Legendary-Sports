@@ -4,8 +4,11 @@
 	box-sizing: border-box;
 }
 
-.dummy-space {
-	height: 30vh;
+
+.table-container {
+	height: 1000px;
+	padding-top: 100px;
+	overflow: scroll;
 }
 
 table{
@@ -33,4 +36,14 @@ table td{
 	width: 18%;
 	text-align: center;
 	background-color: #fff;
+}
+
+.small-screen-hide {
+	display: none;
+}
+
+@media (min-width: 500px) {
+	.small-screen-hide {
+		display: table-cell;
+	}
 }
