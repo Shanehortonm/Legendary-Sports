@@ -149,7 +149,6 @@ footer {
 
 .footer-container-large {
 	display: none;
-	
 }
 
 /* Social Media Imgs */
@@ -160,11 +159,11 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
-  
+
 .social li {
 	list-style: none;
 }
-  
+
 .social li a {
 	display: inline-block;
 	filter: invert(1);
@@ -172,11 +171,11 @@ footer {
 	transform: scale(0.5);
 	transition: 0.5s;
 }
-  
+
 .social li a:hover {
 	transform: scale(0.9) translateY(-25px);
 }
-  
+
 .social li img {
 	width: 70px;
 }
@@ -244,9 +243,7 @@ Start of MQs
 	}
 }
 
-
 @media (min-width: 600px) {
-
 	/* Larger Screen Footer*/
 	.footer-container-small {
 		display: none;
@@ -256,36 +253,10 @@ Start of MQs
 		display: contents;
 		height: 100%;
 		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.footer-container-large h2 {
-		font-size: 40px;
-		color: white;
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-	
-	.footerline-1 ul {
-		width: 50%;
-		display: flex;
-		flex-direction: row;
-		justify-content:space-between;
-	}
-	
-	.footerline-1 li, a {
-		color: white;
-		font-size: 25px;
-		margin-right: 20px;
-		list-style: none;
-		text-decoration: none;
 	}
 }
 
 @media (min-width: 600px) {
-
 }
 
 @media (min-width: 800px) {
@@ -295,11 +266,9 @@ Start of MQs
 }
 
 @media (min-width: 1000px) {
-	
 }
 
-@media (min-width:1200px) {
-	
+@media (min-width: 1200px) {
 	.nav-links li a {
 		font-size: 24px;
 	}
