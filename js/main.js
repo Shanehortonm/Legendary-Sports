@@ -31,9 +31,9 @@ const quoteArray = ["Today, you have 100% of your life left.",
                     "Leadership is a matter of having people look at you and gain confidence, seeing how you react. If you’re in control, they’re in control"];
 
 
-function changeQuote() {
-    if
-}
+// function changeQuote() {
+//     if
+// }
 
 
 

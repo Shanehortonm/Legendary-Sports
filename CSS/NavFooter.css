@@ -187,7 +187,7 @@ Start of MQs
 */
 
 /* Hamburger ONLY*/
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
 	nav {
 		position: fixed;
 		z-index: 3;
@@ -254,9 +254,47 @@ Start of MQs
 		height: 100%;
 		width: 100%;
 	}
-}
 
-@media (min-width: 600px) {
+	.footer-title {
+		width: 100%;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+	}
+
+	.footerline-1 {
+		padding: 20px 5px 20px 5px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.footerline-1 ul p {
+		width: 100%;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: underline;
+		padding-bottom: 10px;
+		color: white;
+	}
+
+	.footerline-1 ul li {
+		text-decoration: none;
+		list-style: none;
+		text-align: center;
+	}
+
+	.footerline-1 a {
+		text-decoration: none;
+		color: var(--primaryColorThree);
+	}
+
+	.footerline-1 a:hover {
+		text-decoration: underline;
+		transition: all 0.5s ease-in-out;
+	}
 }
 
 @media (min-width: 800px) {
