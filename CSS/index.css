@@ -134,7 +134,7 @@ body {
 
 .tile-container {
 	width: 100%;
-	margin-top: 8vh;
+	margin: 8vh 0;
 }
 
 
@@ -143,7 +143,8 @@ body {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: space-around;
+	justify-content: center;
+	align-items: center;
 }
 
 .tile {
@@ -237,35 +238,18 @@ body {
 
 /* START OF QUOTE CARDS */
 
-.header-tittle {
-	height: 20vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-}
 
-.header-tittle h1 {
-	font-family: "Lobster", cursive;
-	color: #fff;
-	font-size: 2rem;
-	position: relative;
-	text-align: center;
-}
 
 .quote-card {
-	margin: 60px auto 100px;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	grid-gap: 20px;
+	margin: 60px 20px 100px;
 }
 
 .quote-card .card {
 	position: relative;
-	width: 350px;
 	margin: 0 auto;
-	background: #333;
-	padding: 20px;
+	max-width: 500px;
+	background: var(--primaryColorTwo);
+	padding: 10px;
 	box-sizing: border-box;
 	text-align: center;
 	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
@@ -278,7 +262,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(var(--primaryColorThree), black);
+	background: linear-gradient( var(--primaryColorOne), var(--primaryColorThree));
 	z-index: 1;
 	transition: 0.5s;
 }
@@ -293,16 +277,16 @@ body {
 }
 
 .quote-card .card .content p {
-	font-size: 18px;
-	line-height: 24px;
-	color: #fff;
+	font-size: 2rem;
+	line-height: 2rem;
+	color: white;
 	min-height: 15vh;
 }
 
 .quote-card .card .content .image {
-	width: 100px;
-	height: 100px;
-	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+	margin: 70px auto;
 	border-radius: 50%;
 	overflow: hidden;
 	border: 4px solid #fff;
@@ -310,20 +294,23 @@ body {
 }
 
 .quote-card .card .content .details h2 {
-	font-family: "Lobster", cursive;
-	font-size: 24px;
-	color: #fff;
+	font-size: 1.7rem;
+	padding: 15px;
+	color: white;
 }
 
 .quote-card .card .content .details h3 {
-	font-family: "Poppins", sans-serif;
-	font-size: 14px;
-	color: #43cbff;
-	transition: 05s;
+	font-size: 1.3rem;
+	color: var(--primaryColorTwo);
+	padding: 5px 0 15px 0;
+	display: hidden;
+	transition: 0.5s;
 }
 
 .quote-card .card:hover .content .details h3 {
 	color: #fff;
+	transition: 2s;
+	transform: scale(1.3);
 }
 
 
@@ -382,7 +369,11 @@ Start of MQs
 	}
 
 	.wrap {
-		flex-direction: row;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 0px;
+        grid-row-gap: 0px;
 	}
 }
 
@@ -390,8 +381,13 @@ Start of MQs
 
 @media screen and (min-width: 1000px) {
 
+	
 }
 
 @media screen and (min-width: 1200px) {
-
+	
+	.wrap {
+		display: flex;
+		flex-direction: row;
+	}
 }
