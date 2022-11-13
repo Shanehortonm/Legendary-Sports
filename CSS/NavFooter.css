@@ -11,7 +11,7 @@
 }
 
 nav {
-	height: 6rem;
+	height: 4.2rem;
 	width: 100%;
 	background-color: var(--primaryColorTwo);
 	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -20,13 +20,12 @@ nav {
 
 /*Styling logo*/
 .logo {
-	padding: 1vh 1vw;
-	text-align: center;
+	margin: 5px;
 }
 
 .logo img {
-	height: 5rem;
-	width: 5rem;
+	height: 3.5rem;
+	width: 4rem;
 	border-radius: 30%;
 }
 
