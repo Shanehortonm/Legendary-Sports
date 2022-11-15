@@ -35,6 +35,27 @@ body {
 
 /*
 ==================================================================================
+Start of HOF List
+==================================================================================
+*/
+
+.hof-container {
+	width: 100%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.9s ease-in;
+}
+
+.hof-container ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+
+/*
+==================================================================================
 Start of HOF Panels
 ==================================================================================
 */
@@ -48,6 +69,8 @@ Start of HOF Panels
     min-height: 70vh;
     overflow: hidden;
     display: flex;
+	flex-direction: column;
+	box-shadow: var(--primaryColorTwo) 0px 1px 4px, var(--primaryColorTwo) 0px 0px 0px 3px;
 }
 
 .panel {
@@ -94,11 +117,7 @@ Start of HOF Panels
 }
 
 
-/*
-================================================================================================
-    Creating Transform effect for Words
-================================================================================================
-*/
+/*  Creating Transform effect for Words  */
 
 .panel > * {
     margin: 0;
@@ -111,16 +130,16 @@ Start of HOF Panels
 }
 
 .panel > *:first-child {
-    transform: translateY(-100%);  /* removed top text lines/flexbox off screen*/
+    transform: translateX(-100%);  /* removed top text lines/flexbox off screen*/
 }
 
 .panel > *:last-child {
-    transform: translateY(100%);
+    transform: translateX(100%);
 }
 
 .panel.open-active > *:first-child,
 .panel.open-active > *:last-child {
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .panel p:nth-child(3) {
@@ -132,22 +151,14 @@ Start of HOF Panels
     font-size: 30px;
 }
 
-.cta {
-    color: white;
-    text-decoration: none;
-}
-
-/*
-======================================================================================
-    Styling for Informational text on players
-======================================================================================
-*/
+/*  Styling for Informational text on players  */
 
 .panel h1 {
     text-transform: uppercase;
     font-family: 'Quicksand''Times New Roman', Times, serif;
     text-shadow: 0 5px 4px rgba(0, 0, 0, 0.72), 0 5px 14px rgba(0, 0, 0, 0.45);
-    font-size: 2rem;
+    font-size: 1.8rem;
+	cursor: pointer;
 }
 .panel h1 {
     background: rgba(0, 0, 0, 0.35);
@@ -157,20 +168,16 @@ Start of HOF Panels
     text-transform: uppercase;
     font-family: 'Quicksand''Times New Roman', Times, serif;
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     background: rgba(0, 0, 0, 0.45);
 }
 
-/*
-============================================================================================
-    Hover effect on H1. Looked into using background clips, to create a new sliding effect
-============================================================================================
-*/
+/*  Hover effect on H1. Looked into using background clips, to create a new sliding effect  */
 
 .panel h1 {
     background:
       linear-gradient(-85deg, #000  40%, #fff 0 60%, #000  0) right/300% 100% no-repeat,
-      linear-gradient(-85deg, #0000 40%, #869397 0 60%, #0000 0) right/300% 100% no-repeat;
+      linear-gradient(-85deg, #0000 40%, var(--primaryColorTwo) 0 60%, #0000 0) right/300% 100% no-repeat;
     -webkit-background-clip: text, padding-box;
     background-clip: text, padding-box;
   }
@@ -178,3 +185,67 @@ Start of HOF Panels
     background-position: left;
     transition: 0.8s
   }
+
+
+/*
+================================================================
+Start of MQ
+================================================================ 
+*/
+
+@media (min-width: 500px) {
+	
+	
+}
+
+@media screen and (min-width: 720px) {
+	
+}
+
+@media screen and (min-width: 1200px) {
+
+    /*  change panels to row and second image  */
+	.panels {
+		flex-direction: row;
+	}
+
+	.panel > *:first-child {
+		transform: translateY(-100%);  /* removed top text lines/flexbox off screen*/
+	}
+	
+	.panel > *:last-child {
+		transform: translateY(100%);
+	}
+	
+	.panel.open-active > *:first-child,
+	.panel.open-active > *:last-child {
+		transform: translateY(0);
+	}
+
+    .panel1 {
+		background-image: url(https://a.espncdn.com/photo/2011/0126/dal_sbteam15_800.jpg);
+	}
+	
+	.panel2 {
+		background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f5/Staubach_cowboys_qb.jpg);
+	}
+	
+	.panel3 {
+		background-image: url(https://cdn.britannica.com/86/197086-050-7FEFA7A6/Emmitt-Smith.jpg);
+	}
+	
+	.panel4 {
+		background-image: url(https://i.pinimg.com/originals/b6/a0/75/b6a0755825829a73d8319b6d5a9088c1.jpg);
+	}
+	
+	.panel5 {
+		background-image: url(https://a.espncdn.com/photo/2011/1103/dal_g_allen_b1_300.jpg);
+	}
+
+
+
+}
+
+@media screen and (min-width: 1800px) {
+	
+}

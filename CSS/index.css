@@ -104,33 +104,6 @@ body {
 ===========================
 */
 
-/* START OF BLOGS */
-
-.blog-container {
-	width: 100%;
-	height: 90vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.blog-card {
-	border: 1px solid black;
-	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-	width: 50%;
-	height: 75%;
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.blog-card img {
-	width: 100%;
-	height: 300px;
-}
-
 /* START OF TILES */
 
 .tile-container {
@@ -231,7 +204,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	box-shadow: white 0px 10px 30px 1px;
+	box-shadow: var(--primaryColorTwo) 0px 10px 30px 1px;
 }
 
 /* START OF QUOTE CARDS */
@@ -250,7 +223,7 @@ body {
 	padding: 10px;
 	box-sizing: border-box;
 	text-align: center;
-	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 5px 90px 5px var(--primaryColorTwo);
 	overflow: hidden;
 }
 
