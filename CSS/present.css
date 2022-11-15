@@ -11,6 +11,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Nunito', 'Times New Roman', Times, serif;
+	
 }
 
 body {
@@ -48,6 +49,7 @@ Start of Hero
 .hero-img {
 	margin-top: 60px;
 	width: 100%;
+	box-shadow: 0px 7px 28px 2px rgba(255,255,255,0.55);
 }
 
 /*
@@ -111,7 +113,7 @@ Start of Table
 
 table {
 	width: 100%;
-	padding: 30px;;
+	padding: 30px;
 }
 
 .sticky-table {
