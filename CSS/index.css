@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 :root {
 	--primaryColorOne: #002244;
 	--primaryColorTwo: #869397;
@@ -8,6 +10,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Nunito', 'Times New Roman', Times, serif;
 }
 
 body {
@@ -301,6 +304,7 @@ body {
 	display: hidden;
 	transition: 0.5s;
 }
+
 
 .quote-card .card:hover .content p {
 	color: white;

@@ -1,13 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+:root {
+	--primaryColorOne: #002244;
+	--primaryColorTwo: #869397;
+	--primaryColorThree: #00338d;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Nunito', 'Times New Roman', Times, serif;
+}
+
+body {
+	background-color: var(--primaryColorOne);
 }
 
 .dummy-space {
 	height: 100vh;
 }
 
+.section-header {
+	border-bottom: 4mm ridge white;
+	border-radius: 60%;
+	padding-bottom: 10px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5rem;
+	color: white;
+}
+
+/*
+==================================================================================
+START OF TABLE
+==================================================================================
+*/
 .past-table {
 	width: 100%;
 }

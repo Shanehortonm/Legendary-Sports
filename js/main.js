@@ -42,6 +42,8 @@ function changeQuote() {
     document.getElementById('tomQuote').innerHTML = item.quote1;
 };
 
+
+
 document.getElementById('change-Quote').onclick = function(){
     changeQuote()
 };
