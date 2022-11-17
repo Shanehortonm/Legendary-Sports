@@ -31,6 +31,7 @@ body {
 	align-items: center;
 	font-size: 2.5rem;
 	color: white;
+	margin-top: 30px;
 }
 
 /*
@@ -57,6 +58,22 @@ Start of Hero
 Start of HOF List
 ==================================================================================
 */
+.hof-intro {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	padding: 30px;
+}
+
+.hof-intro p {
+	font-size: 1.5rem;
+	transition: all 0.5s ease-in-out;
+	margin-top: 15px;
+}
 
 .hof-container {
 	width: 100%;
@@ -65,12 +82,26 @@ Start of HOF List
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+.hof-container ul {
+	padding: 10px 0 80px 0;
+}
+.hof-container ul li {
+	list-style: none;
 }
 
 .hof-container ul li a {
 	color: white;
 	text-decoration: none;
 }
+
+.hof-container ul li a:hover {
+	color: var(--primaryColorTwo);
+}
+
 
 /*
 ==================================================================================
@@ -94,7 +125,7 @@ Start of HOF Panels
 
 .panel {
 	background: #869397;
-	box-shadow: inset 0 0 0 15px rgba(255, 255, 255, 0.1); /* creates the lines in between panels*/
+	box-shadow: inset 0 0 0 10px rgba(255, 255, 255, 0.1); /* creates the lines in between panels*/
 	color: white;
 	text-align: center;
 	align-items: center;
@@ -103,7 +134,7 @@ Start of HOF Panels
 		background 0.2s;
 	font-size: 20px;
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	flex: 1;
 	justify-content: center;
 	align-items: center;
@@ -194,15 +225,15 @@ Start of HOF Panels
 /*  Hover effect on H1. Looked into using background clips, to create a new sliding effect  */
 
 .panel h1 {
-	background: linear-gradient(-85deg, #000 40%, #fff 0 60%, #000 0) right/300%
+	background: linear-gradient(-85deg, #000 40%, #fff 0 60%, #000 0) left/300%
 			100% no-repeat,
 		linear-gradient(-85deg, #0000 40%, var(--primaryColorTwo) 0 60%, #0000 0)
-			right/300% 100% no-repeat;
+			left/300% 100% no-repeat;
 	-webkit-background-clip: text, padding-box;
 	background-clip: text, padding-box;
 }
 .panel h1:hover {
-	background-position: left;
+	background-position: right;
 	transition: 0.8s;
 }
 
@@ -219,6 +250,13 @@ Start of MQ
 }
 
 @media screen and (min-width: 1200px) {
+
+	.hof-intro p {
+		font-size: 1.8rem;
+		transition: all 0.5s ease-in-out;
+	}
+
+
 	/*  change panels to row and second image  */
 	.panels {
 		flex-direction: row;
@@ -239,6 +277,7 @@ Start of MQ
 
 	.panel1 {
 		background-image: url(https://a.espncdn.com/photo/2011/0126/dal_sbteam15_800.jpg);
+		background-position: center;
 	}
 
 	.panel2 {
