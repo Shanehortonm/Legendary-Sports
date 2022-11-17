@@ -62,9 +62,9 @@ Start of HOF List
 	width: 100%;
 	color: white;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-evenly;
 	align-items: center;
-	transition: all 0.9s ease-in;
 }
 
 .hof-container ul li a {
