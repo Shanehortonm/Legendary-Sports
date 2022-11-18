@@ -83,7 +83,20 @@ Start of HOF List
 	justify-content: space-evenly;
 	align-items: center;
 	text-align: center;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
+	transition: all 0.7s ease-in-out;
+}
+
+.hof-container h1 {
+	color: whitesmoke;
+	border-bottom: 2px solid whitesmoke;
+	padding-bottom: 10px;
+	margin: 15px 0 15px 0;
+	text-shadow: 1px 0px 1px var(--primaryColorOne),
+		0px 1px 1px var(--primaryColorOne), 2px 1px 1px var(--primaryColorOne),
+		1px 2px 1px var(--primaryColorOne), 3px 2px 1px var(--primaryColorOne),
+		2px 3px 1px #eee, 4px 3px 1px #ccc, 3px 4px 1px #eee, 5px 4px 1px #ccc,
+		4px 5px 1px #eee, 6px 5px 1px #ccc, 5px 6px 1px #eee, 7px 6px 1px #ccc;
 }
 
 .hof-container ul {
@@ -94,14 +107,33 @@ Start of HOF List
 }
 
 .hof-container ul li a {
-	color: white;
+	color: whitesmoke;
 	text-decoration: none;
 }
 
 .hof-container ul li a:hover {
-	color: var(--primaryColorTwo);
+	color: var(--primaryColorThree);
 }
 
+.offense-container,
+.defense-container,
+.coach-staff-container {
+	background-color: var(--primaryColorTwo);
+	color: whitesmoke;
+	border: 2px solid var(--primaryColorTwo);
+	border-radius: 10px;
+	margin: 30px 5px 30px 5px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	line-height: 40px;
+}
+
+.offensive-players,
+.defensive-players,
+.coaches-staff {
+	padding: 20px;
+}
 
 /*
 ==================================================================================
@@ -115,7 +147,7 @@ Start of HOF Panels
 }
 
 .panels {
-	min-height: 70vh;
+	min-height: 100vh;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
@@ -239,23 +271,31 @@ Start of HOF Panels
 
 /*
 ================================================================
+Start of Timeline
+================================================================ 
+*/
+
+/*
+================================================================
 Start of MQ
 ================================================================ 
 */
 
-@media (min-width: 500px) {
-}
-
 @media screen and (min-width: 720px) {
+	.hof-container {
+		font-size: 1.6rem;
+	}
 }
 
 @media screen and (min-width: 1200px) {
+	.hof-container {
+		font-size: 1.8rem;
+	}
 
 	.hof-intro p {
 		font-size: 1.8rem;
 		transition: all 0.5s ease-in-out;
 	}
-
 
 	/*  change panels to row and second image  */
 	.panels {
@@ -298,4 +338,7 @@ Start of MQ
 }
 
 @media screen and (min-width: 1800px) {
+	.hof-container {
+		font-size: 2rem;
+	}
 }

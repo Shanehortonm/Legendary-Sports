@@ -105,8 +105,8 @@ Start of Table
 ==========================================
 */
 .table-container {
-	height: 800px;
-	margin: 30px 5px 30px 5px;
+	height: 80vh;
+	margin: 30px 25px 30px 25px;
 	padding-top: 50px;
 	overflow: scroll;
 }
