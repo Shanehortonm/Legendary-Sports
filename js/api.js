@@ -1,21 +1,4 @@
 
-// function fetchTeamData(){
-//    fetch('https://api.sportsdata.io/v3/nfl/scores/json/NewsByTeam/DAL?key=6f9e2dbbd2364930824754d2dcb5228f')
-//    .then(response => {
-//       if(!response.ok) {
-//          throw Error('ERROR')
-//       }
-//       return response.json();
-//    })
-//    .then(data => {
-//       console.log(data);
-//       document.querySelector('#players').innerHTML = '<h1>hello</h1>'
-//    })
-//    .catch(error => {
-//       console.log(error);
-//    });
-// }
-
 async function fetchTeamRecord() {
    await fetch('https://api.sportsdata.io/v3/nfl/scores/json/Standings/2022?key=6f9e2dbbd2364930824754d2dcb5228f')
 
