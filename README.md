@@ -9,9 +9,9 @@ to continue developing this website for use in my portfolio.
 
 The requirements that I ment where:
 
-                   1. Use of Chart.js
-                   2. Use of arrays to display data (being pulled from api)
-                   3. Use of a api (sportdata.io)
+     1. Use of Chart.js.
+     2. Use of arrays to display data (being pulled from api).
+     3. Use of a api (sportdata.io).
 
 
 
